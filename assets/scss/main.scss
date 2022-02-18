@@ -1,0 +1,25 @@
+
+%container {
+  margin: auto;
+  width: 90%
+}
+$color-primary: #DBD56E;
+$color-secondary: #88AB75;
+$color-third: #2D93AD;
+$color-fourth: #7D7C84;
+$color-fourth: #DE8F6E;
+// extra
+$color-success: green;
+$color-danger: red;
+$color-warning: orange;
+$color-info: lightblue;
+$color-light: #FEFFFE;
+$color-dark: #1a1a1a;
+
+@import '_null';
+
+@import '_extra';
+
+@import 'block/_header-block';
+
+@import 'block/_users-block';

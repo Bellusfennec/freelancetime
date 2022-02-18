@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  @extend %container;
+  margin-bottom: 50px;
+  &__logo {
+    // text-transform: uppercase;
+    order: 1;
+  }
+  &__navigation {
+    margin-left: 50px;
+    display: flex;
+    order: 1;
+    a {
+      display: flex;
+      justify-content: center;
+      width: 120px;
+      padding: 10px 0;
+      color: $color-third;
+      &:hover {
+        text-decoration: none;
+        color: darken($color-third, 25%)
+      }
+    }
+  }
+  &__login {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
