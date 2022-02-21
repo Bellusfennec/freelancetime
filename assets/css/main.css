@@ -104,18 +104,19 @@ a:hover {
 }
 
 .users {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  border: #7cc9dd 1px solid;
+  border-right: none;
+  border-bottom: none;
 }
 
 .users__item {
-  width: 150px;
-  border: #f6dfd6 1px solid;
+  border: #7cc9dd 1px solid;
+  border-top: none;
+  border-left: none;
   padding: 15px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -141,7 +142,6 @@ a:hover {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
-  border: #f6dfd6 1px solid;
   -webkit-border-radius: 25px;
           border-radius: 25px;
   display: -webkit-box;
@@ -185,5 +185,4 @@ a:hover {
 
 .rating-result > span.active {
   color: gold;
-  text-shadow: 1px 1px #c60;
 }

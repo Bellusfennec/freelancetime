@@ -1,10 +1,15 @@
 .users {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));
   @extend %container;
+  border: lighten($color-third, 25%)  1px solid;
+  border-right: none;
+  border-bottom: none;
   &__item {
-    width: 150px;
-    border: lighten($color-fourth, 25%)  1px solid;
+    // flex: 1 1 160px;
+    border: lighten($color-third, 25%)  1px solid;
+    border-top: none;
+    border-left: none;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -16,7 +21,6 @@
   &__img {
     margin: 10px 0;
     order: 2;
-    border: lighten($color-fourth, 25%)  1px solid;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -43,5 +47,4 @@
 }
 .rating-result > span.active {
 	color: gold;
-	text-shadow: 1px 1px #c60;
 }

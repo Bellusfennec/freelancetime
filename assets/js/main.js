@@ -13,7 +13,7 @@ function addClass(el, className) {
 }
 
 const ul = document.querySelector("#authors");
-const url = "https://randomuser.me/api/?results=10";
+const url = "https://randomuser.me/api/?results=20";
 
 fetch(url)
   .then((resp) => resp.json())
