@@ -32,7 +32,7 @@ fetch(url)
       img.src = author.picture.large;
       header.innerHTML = `${author.name.first}`;
       divUser.innerHTML = `
-      <div class="rating-result">
+      <div class="users__rating">
         <span class="active"></span>	
         <span class="active"></span>    
         <span class="active"></span>  

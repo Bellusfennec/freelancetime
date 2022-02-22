@@ -1,13 +1,16 @@
 
 %container {
   margin: auto;
-  width: 90%
+  width: 90%;
+  @media screen and (max-width: 768px) {
+    margin: 0 15px;
+    width: calc(100% - 30px);
+    
+  }
 }
-$color-primary: #DBD56E;
-$color-secondary: #88AB75;
-$color-third: #2D93AD;
-$color-fourth: #7D7C84;
-$color-fourth: #DE8F6E;
+$color-text-primary: #2D93AD;
+$color-text-secondary: #88AB75;
+$color-text-third: #2D93AD;
 // extra
 $color-success: green;
 $color-danger: red;
